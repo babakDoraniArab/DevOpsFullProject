@@ -1,0 +1,13 @@
+# please copy this configuration and edit it.
+# cp terraform.tfvars.example ./terraform.tfvars
+#  and edit it 
+#////////////////////////////////
+#  Variables
+#////////////////////////////////
+web_app_name      = "nginx"
+whitelist         = ["0.0.0.0/0"]
+web_instance_type = "t2.micro"
+web_key_name      = "Demo"
+region            = "eu-west1"
+profile           = "default"
+

@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  tasks:
+    # install all the packages before installing jenkins + docker 
+    - include: packages.yaml
+
+  
+
+    # - name: Run image
+    #   shell: docker run --name hello -dit -p 80:80 -p 443:443 babak/nginx-static
+    #   become: yes
